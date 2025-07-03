@@ -1,5 +1,7 @@
 'use client';
 
+import { InfoIcon } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -30,8 +32,6 @@ import {
 import { useModel } from '@/hooks/useModel';
 import { models } from '@/lib/modellist';
 import { isModelSupported } from '@/lib/supportedllm';
-import { InfoIcon } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
 
 interface Model {
   modelId: string;

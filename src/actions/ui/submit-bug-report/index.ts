@@ -1,7 +1,7 @@
 'use server';
 
-import { db } from '@/lib/db';
 import { z } from 'zod';
+import { db } from '@/lib/db';
 
 const bugReportSchema = z.object({
   title: z.string().min(1, 'Title is required').max(100, 'Title is too long'),

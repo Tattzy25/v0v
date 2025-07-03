@@ -4,7 +4,10 @@ import { Button } from './ui';
 const LikeButton = ({
   liked,
   toggleLikeClick,
-}: { liked: boolean; toggleLikeClick: () => void }) => {
+}: {
+  liked: boolean;
+  toggleLikeClick: () => void;
+}) => {
   return (
     <Button
       variant={'ghost'}

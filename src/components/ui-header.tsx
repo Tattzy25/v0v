@@ -1,10 +1,10 @@
-import { forkUI } from '@/actions/ui/fork-ui';
-import { useAuthModal } from '@/hooks/useAuthModal';
 import { GitFork, LockOpen } from 'lucide-react';
-import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { useState } from 'react';
 import { toast } from 'sonner';
+import { forkUI } from '@/actions/ui/fork-ui';
+import { useAuthModal } from '@/hooks/useAuthModal';
 import PromptBadge from './prompt-badge';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';

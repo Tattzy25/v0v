@@ -1,12 +1,12 @@
 'use client';
 
+import { CompassIcon, GithubIcon } from 'lucide-react';
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
 import UserButton from '@/components/user-button';
 import { cn } from '@/lib/utils';
-import { CompassIcon, GithubIcon } from 'lucide-react';
-import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
 
 const NAVIGATION_ITEMS = [
   {

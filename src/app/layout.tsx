@@ -1,16 +1,16 @@
 import './globals.css';
 
+import type { Metadata, Viewport } from 'next';
+import { Geist } from 'next/font/google';
+import Script from 'next/script';
+import { SessionProvider } from 'next-auth/react';
+import { ThemeProvider } from 'next-themes';
 import Maintenance from '@/app/maintenance/page';
 import AuthModal from '@/components/auth-modal';
 import Header from '@/components/header';
 import { TooltipProvider } from '@/components/ui';
 import { Toaster } from '@/components/ui/sonner';
 import { cn } from '@/lib/utils';
-import type { Metadata, Viewport } from 'next';
-import { SessionProvider } from 'next-auth/react';
-import { ThemeProvider } from 'next-themes';
-import { Geist } from 'next/font/google';
-import Script from 'next/script';
 
 const geist = Geist({
   subsets: ['latin'],

@@ -5,7 +5,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import React from 'react';
 import { Badge } from './ui';
 
 const tips = [

@@ -1,6 +1,8 @@
 'use client';
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { signOutGithub } from '@/actions/auth/sign-out';
-import { Badge, Button } from '@/components/ui';
+import { Button } from '@/components/ui';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Card,
@@ -11,8 +13,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 
 export default function AccountPage() {
   const { data } = useSession();

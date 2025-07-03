@@ -1,7 +1,6 @@
-import { cn } from '@/lib/utils';
-import { AnimatePresence, motion } from 'framer-motion';
 import { LoaderCircle } from 'lucide-react';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 interface VersionPreviewProps {
   id: string;

@@ -1,17 +1,17 @@
 'use client';
 
+import { motion } from 'framer-motion';
+import { Book, Bug, GitCommit, InfoIcon, Star, Zap } from 'lucide-react';
+import { useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import {
   type Change,
   type ChangeType,
-  type Version,
   commitChanges,
+  type Version,
 } from '@/lib/changelogs';
-import { motion } from 'framer-motion';
-import { Book, Bug, GitCommit, InfoIcon, Star, Zap } from 'lucide-react';
-import { useEffect } from 'react';
 
 const ChangelogCards = ({ commitChanges }: { commitChanges: Version[] }) => {
   const groupChangesByType = (changes: Change[]) => {

@@ -1,3 +1,10 @@
+import type { LucideIcon } from 'lucide-react';
+import { BugIcon, LogOut, Settings, SquareLibrary } from 'lucide-react';
+import Link from 'next/link';
+import { redirect } from 'next/navigation';
+import type { User } from 'next-auth';
+import { useSession } from 'next-auth/react';
+import { Fragment } from 'react';
 import { signOutGithub } from '@/actions/auth/sign-out';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -11,13 +18,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useAuthModal } from '@/hooks/useAuthModal';
-import { BugIcon, LogOut, Settings, SquareLibrary } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-import type { User } from 'next-auth';
-import { useSession } from 'next-auth/react';
-import Link from 'next/link';
-import { redirect } from 'next/navigation';
-import { Fragment } from 'react';
 
 type MenuItem = {
   icon: LucideIcon;

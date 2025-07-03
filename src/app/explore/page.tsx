@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { getUIs } from '@/actions/ui/get-uis';
 import { EmptyState } from '@/components/explore/empty-state';
 import ProjectCard from '@/components/project-card';
@@ -18,8 +20,6 @@ import {
 import { ITEMS_PER_PAGE, TAB_OPTIONS, TIME_RANGES } from '@/constants';
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll';
 import type { UI } from '@/types/user';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 type Filters = {
   mode: string;

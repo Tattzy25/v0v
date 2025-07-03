@@ -1,5 +1,20 @@
 'use client';
 
+import { AnimatePresence, motion } from 'framer-motion';
+import {
+  ArrowUp,
+  Image as ImageIcon,
+  InfoIcon,
+  LoaderCircle,
+  Lock,
+  PaperclipIcon,
+  Settings2,
+  X,
+} from 'lucide-react';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
+import { useRef, useState } from 'react';
 import {
   Button,
   Card,
@@ -14,21 +29,6 @@ import { useAuthModal } from '@/hooks/useAuthModal';
 import { useModelInitialization } from '@/hooks/useModelInitialization';
 import { useUIGenerator } from '@/hooks/useUIGenerator';
 import { useUIState } from '@/hooks/useUIState';
-import { AnimatePresence, motion } from 'framer-motion';
-import {
-  ArrowUp,
-  Image as ImageIcon,
-  InfoIcon,
-  LoaderCircle,
-  Lock,
-  PaperclipIcon,
-  Settings2,
-  X,
-} from 'lucide-react';
-import { useSession } from 'next-auth/react';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import { useRef, useState } from 'react';
 
 const PromptInput = () => {
   const router = useRouter();

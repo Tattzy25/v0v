@@ -1,5 +1,6 @@
 'use client';
 
+import { Code2, InfoIcon, Settings2, Zap } from 'lucide-react';
 import {
   Label,
   Select,
@@ -18,8 +19,6 @@ import {
 } from '@/components/ui/card';
 import useLanguage from '@/hooks/useLanguage';
 import { type ModeStore, useClientMode } from '@/hooks/useMode';
-import { Code2, InfoIcon, Settings2, Zap } from 'lucide-react';
-import React from 'react';
 
 export default function LLMSettingsPage() {
   const { preciseMode, balancedMode, creativeMode, setMode }: ModeStore =

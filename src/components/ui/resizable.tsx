@@ -1,10 +1,9 @@
 'use client';
 
 import { DragHandleDots2Icon } from '@radix-ui/react-icons';
+import { forwardRef, type LegacyRef } from 'react';
 import * as ResizablePrimitive from 'react-resizable-panels';
-
 import { cn } from '@/lib/utils';
-import { type LegacyRef, forwardRef } from 'react';
 
 const ResizablePanelGroup = forwardRef(
   (

@@ -1,8 +1,8 @@
 'use client';
-import { useSidebar } from '@/hooks/useSidebar';
-import { cn } from '@/lib/utils';
 import { ChevronsLeft } from 'lucide-react';
 import { useState } from 'react';
+import { useSidebar } from '@/hooks/useSidebar';
+import { cn } from '@/lib/utils';
 import { VersionPreview } from './version-preview';
 
 export default function Sidebar({ subPrompts, setVersion, subid }: any) {

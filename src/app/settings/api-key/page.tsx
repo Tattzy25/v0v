@@ -1,5 +1,7 @@
 'use client';
 
+import { Key, KeyRound, ShieldAlert } from 'lucide-react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -10,8 +12,6 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Key, KeyRound, ShieldAlert } from 'lucide-react';
-import { useState } from 'react';
 
 const ApiKeyPage = () => {
   const [apiKey, setApiKey] = useState('');

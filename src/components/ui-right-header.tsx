@@ -1,10 +1,4 @@
 'use client';
-import { toggleLike } from '@/actions/ui/toggle-like-ui';
-import { useAuthModal } from '@/hooks/useAuthModal';
-import useTheme from '@/hooks/useTheme';
-import { embeddedCode } from '@/lib/code';
-import { getCss } from '@/lib/globalCss';
-import { themes as defaultThemes, themes } from '@/lib/themes';
 import {
   CodeXml,
   Cpu,
@@ -23,6 +17,12 @@ import { useEffect, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { toast } from 'sonner';
+import { toggleLike } from '@/actions/ui/toggle-like-ui';
+import { useAuthModal } from '@/hooks/useAuthModal';
+import useTheme from '@/hooks/useTheme';
+import { embeddedCode } from '@/lib/code';
+import { getCss } from '@/lib/globalCss';
+import { themes as defaultThemes, themes } from '@/lib/themes';
 import LikeButton from './like-button';
 import PromptBadge from './prompt-badge';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';

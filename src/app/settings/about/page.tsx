@@ -1,3 +1,5 @@
+import { Clock, Code, Github, Globe, Rocket } from 'lucide-react';
+import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import {
   Card,
@@ -6,8 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Clock, Code, Github, Globe, Rocket } from 'lucide-react';
-import Link from 'next/link';
 
 export const metadata = {
   title: 'About | Settings',

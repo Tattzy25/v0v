@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils';
 import {
   Bot,
   Info,
@@ -10,6 +9,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const SIDEBAR_ITEMS = [
   { name: 'General', href: '/settings/general', icon: Settings },

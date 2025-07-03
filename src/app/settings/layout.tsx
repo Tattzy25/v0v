@@ -1,8 +1,8 @@
 'use client';
-import SettingsSidebar from '@/components/settings-sidebar';
-import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { useEffect } from 'react';
+import SettingsSidebar from '@/components/settings-sidebar';
 
 export default function SettingsLayout({
   children,

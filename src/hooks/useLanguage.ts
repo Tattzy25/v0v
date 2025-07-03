@@ -1,5 +1,5 @@
-import { getLocalStorageItem } from '@/lib/localStorage';
 import { create } from 'zustand';
+import { getLocalStorageItem } from '@/lib/localStorage';
 
 type Language = 'javascript' | 'typescript';
 

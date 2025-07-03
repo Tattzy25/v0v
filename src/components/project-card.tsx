@@ -1,9 +1,9 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { Card, Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui';
 import { timeAgo } from '@/lib/time';
 import { cn } from '@/lib/utils';
 import type { UI } from '@/types/user';
-import Image from 'next/image';
-import Link from 'next/link';
 
 const ProjectCard = ({ ui, onClick }: { ui: UI; onClick: () => void }) => {
   return (

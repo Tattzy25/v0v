@@ -1,7 +1,7 @@
 'use server';
 
-import { db } from '@/lib/db';
 import type { Prisma } from '@prisma/client';
+import { db } from '@/lib/db';
 
 export const getUIs = async (
   mode: string,

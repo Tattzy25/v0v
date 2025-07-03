@@ -1,4 +1,6 @@
 'use client';
+import { ChevronDownIcon, ChevronUpIcon, InfoIcon } from 'lucide-react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -17,8 +19,6 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
-import { ChevronDownIcon, ChevronUpIcon, InfoIcon } from 'lucide-react';
-import { useState } from 'react';
 
 export default function GeneralSettingsPage() {
   const [developerMode, setDeveloperMode] = useState(false);

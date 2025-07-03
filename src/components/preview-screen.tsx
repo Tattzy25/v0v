@@ -1,5 +1,5 @@
-import useTheme from '@/hooks/useTheme';
 import { NextUIProvider } from '@nextui-org/system';
+import useTheme from '@/hooks/useTheme';
 import ReactLiveContent from './react-live';
 
 // interface ErrorBoundaryState {

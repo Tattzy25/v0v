@@ -1,12 +1,8 @@
-import { trimCode } from '@/lib/code';
-import { llm } from '@/lib/llm';
-import {
-  getElementProperty,
-  getRefienedElementProperty,
-  getScreenshotPrompt,
-} from '@/lib/prompt';
 import { generateText } from 'ai';
 import { z } from 'zod';
+import { trimCode } from '@/lib/code';
+import { llm } from '@/lib/llm';
+import { getScreenshotPrompt } from '@/lib/prompt';
 
 export const maxDuration = 60;
 export const dynamic = 'force-dynamic';

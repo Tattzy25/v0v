@@ -1,13 +1,13 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
+import { useCallback, useEffect, useState } from 'react';
+import { toast } from 'sonner';
 import { createUI } from '@/actions/ui/create-ui';
 import { Badge } from '@/components/ui/badge';
 import { useAuthModal } from '@/hooks/useAuthModal';
 import { useUIState } from '@/hooks/useUIState';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useState } from 'react';
-import { toast } from 'sonner';
 
 const SUGGESTIONS_API_URL = '/api/suggestions';
 const MODEL_ID = 'google:gemini-2.0-flash-exp';

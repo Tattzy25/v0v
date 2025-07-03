@@ -1,10 +1,10 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { getUIHome } from '@/actions/ui/get-uis';
 import ProjectCard from '@/components/project-card';
 import type { UI } from '@/types/user';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 const HomeUICards = () => {
   const router = useRouter();

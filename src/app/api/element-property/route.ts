@@ -1,7 +1,7 @@
-import { llm } from '@/lib/llm';
-import { getElementProperty, getRefienedElementProperty } from '@/lib/prompt';
 import { generateText } from 'ai';
 import { z } from 'zod';
+import { llm } from '@/lib/llm';
+import { getElementProperty, getRefienedElementProperty } from '@/lib/prompt';
 
 export const maxDuration = 60;
 export const dynamic = 'force-dynamic';

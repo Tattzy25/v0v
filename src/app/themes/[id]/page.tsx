@@ -1,4 +1,14 @@
 'use client';
+import {
+  ArrowLeft,
+  Palette,
+  PlusCircle,
+  Save,
+  Settings2,
+  Type,
+} from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { use, useEffect, useState } from 'react';
 import { Badge, Button } from '@/components/ui';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -19,16 +29,6 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { themes as defaultThemes } from '@/lib/themes';
-import {
-  ArrowLeft,
-  Palette,
-  PlusCircle,
-  Save,
-  Settings2,
-  Type,
-} from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import React, { useState, useEffect, use } from 'react';
 
 type ColorProperty = {
   name: string;

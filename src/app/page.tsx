@@ -1,5 +1,5 @@
-import HomeUICards from '@/components/home-uis';
 import HeroSection from '@/components/home/hero-section';
+import HomeUICards from '@/components/home-uis';
 import PromptInput from '@/components/prompt-input';
 import Suggestions from '@/components/suggestions';
 

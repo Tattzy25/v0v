@@ -1,7 +1,7 @@
-import { llm } from '@/lib/llm';
-import { getBalancedPrompt, getCreativePrompt } from '@/lib/prompt';
 import { generateText } from 'ai';
 import { z } from 'zod';
+import { llm } from '@/lib/llm';
+import { getBalancedPrompt, getCreativePrompt } from '@/lib/prompt';
 
 export const maxDuration = 60;
 export const dynamic = 'force-dynamic';

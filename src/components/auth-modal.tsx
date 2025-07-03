@@ -1,9 +1,9 @@
 'use client';
-import { signInGithub } from '@/actions/auth/sign-in';
-import { useAuthModal } from '@/hooks/useAuthModal';
 import { Github, LoaderCircle } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
+import { signInGithub } from '@/actions/auth/sign-in';
+import { useAuthModal } from '@/hooks/useAuthModal';
 import {
   Button,
   Dialog,

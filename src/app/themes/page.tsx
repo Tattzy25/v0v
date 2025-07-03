@@ -1,4 +1,8 @@
 'use client';
+import { MoreVertical, Palette, PlusCircle, Trash2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
 import { ForkThemeDialog } from '@/components/fork-theme-dialog';
 import { NewThemeDialog } from '@/components/new-theme-dialog';
 import { Badge } from '@/components/ui';
@@ -17,10 +21,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { type Theme, themes } from '@/lib/themes';
-import { MoreVertical, Palette, PlusCircle, Trash2 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import React, { useState, useEffect } from 'react';
-import { toast } from 'sonner';
 
 export default function ThemeSelector() {
   const router = useRouter();

@@ -1,6 +1,6 @@
 'use client';
 
-import { type LegacyRef, forwardRef } from 'react';
+import { forwardRef, type LegacyRef } from 'react';
 import type { ImperativePanelGroupHandle } from 'react-resizable-panels';
 import PreviewScreen from './preview-screen';
 import {

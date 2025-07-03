@@ -1,8 +1,8 @@
-import { db } from '@/lib/db';
 import { Redis } from '@upstash/redis';
 import { headers } from 'next/headers';
 import { type NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { db } from '@/lib/db';
 
 let redis: Redis | null;
 try {

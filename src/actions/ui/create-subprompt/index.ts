@@ -1,9 +1,9 @@
 'use server';
 
-import { db } from '@/lib/db';
 import { Prisma } from '@prisma/client';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
+import { db } from '@/lib/db';
 
 const SubPromptInput = z.object({
   subPrompt: z.string().min(1),

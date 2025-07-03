@@ -1,5 +1,9 @@
 'use client';
 
+import { Box, CalendarDays, User as UserIcon } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { use, useCallback, useEffect, useState } from 'react';
+import { toast } from 'sonner';
 import { getUIProfile } from '@/actions/ui/get-uis';
 import { getUser } from '@/actions/user';
 import ProjectCard from '@/components/project-card';
@@ -16,10 +20,6 @@ import {
   TabsTrigger,
 } from '@/components/ui';
 import type { UI } from '@/types/user';
-import { Box, CalendarDays, User as UserIcon } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { use, useCallback, useEffect, useState } from 'react';
-import { toast } from 'sonner';
 
 interface User {
   id: string;

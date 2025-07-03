@@ -1,3 +1,4 @@
+import { ArrowUpRight, Bot, Clock, InfoIcon } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -5,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { ArrowUpRight, Bot, Clock, InfoIcon } from 'lucide-react';
 
 export default function Maintenance() {
   return (
