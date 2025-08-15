@@ -115,7 +115,7 @@ const anthropicVertex = createAnthropicVertex({
   headers: {
     'anthropic-beta': 'max-tokens-3-5-sonnet-2024-07-15',
   },
-  googleAuth: googleAuth as any,
+  googleAuth: googleAuth,
 });
 
 const modelRegistry = createProviderRegistry({
